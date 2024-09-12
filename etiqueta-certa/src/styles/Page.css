@@ -1,0 +1,48 @@
+.page-container {
+    width: 220px;
+    background-color: white;
+    border: 1px solid #e1e5e9;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+}
+
+.page-container:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.add-item-button {
+    margin-top: auto;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    z-index: 2;
+
+}
+
+.add-item-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}

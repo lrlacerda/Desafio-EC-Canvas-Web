@@ -1,0 +1,69 @@
+.canvas-container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Impede que as páginas quebrem linha */
+    overflow-x: auto;
+    /* Permite rolar horizontalmente se houver muitas páginas */
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #f0f2f5; */
+    margin-top: 100px;
+    height: 453px;
+    white-space: nowrap;
+    /* Garante que as páginas não quebrem para a próxima linha */
+}
+
+.add-page-button-container {
+    margin-top: 20px;
+    /* Ajuste o espaçamento conforme necessário */
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha o botão ao final do contêiner */
+}
+
+.add-page-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Azul primário */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Animação suave */
+}
+
+.add-page-button:hover {
+    background-color: #0056b3;
+    /* Azul mais escuro no hover */
+    transform: scale(1.05);
+    /* Leve aumento no hover */
+}
+
+.zoom-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zoom-controls button {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.zoom-controls button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}

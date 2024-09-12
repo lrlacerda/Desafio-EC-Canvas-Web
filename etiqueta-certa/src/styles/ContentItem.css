@@ -1,0 +1,97 @@
+/* Estilo existente para content-item */
+.content-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    z-index: 1;
+    border: 2px dashed red;
+        /* Adicione para depuração */
+}
+
+.content-item:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dragging {
+    opacity: 0.7;
+    /* Se necessário, ajuste o z-index aqui */
+    z-index: 10;
+    /* Aumente o valor se necessário para garantir que o item esteja visível durante o arrasto */
+}
+
+.delete-item-button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.delete-item-button:hover {
+    color: #c82333;
+}
+
+.content-item-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.content-item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    z-index: 1;
+    /* Adicione um z-index baixo para garantir que a imagem não seja sobreposta */
+}
+
+.image-selector {
+    display: flex;
+    flex-direction: column;
+    /* Organiza as imagens verticalmente */
+    gap: 10px;
+    /* Espaço entre as imagens */
+    margin-top: 10px;
+}
+
+.image-option {
+    width: 60px;
+    /* Define uma largura fixa para as opções de imagem */
+    cursor: pointer;
+    /* Altera o cursor para indicar que é clicável */
+    border: 2px solid transparent;
+    /* Borda padrão transparente */
+}
+
+.image-option.selected {
+    border-color: green;
+    /* Destaca a imagem selecionada */
+}
+
+.image-option.selected {
+    border-color: #007bff;
+}
+
+.image-option:hover {
+    border-color: #0056b3;
+}
+
+.content-item input {
+    width: 10px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    flex: 1;
+}
